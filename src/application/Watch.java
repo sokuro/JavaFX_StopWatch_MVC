@@ -19,8 +19,6 @@ public class Watch extends Application {
 	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-
-//		new AnalogClock(time);
 		
 		BorderPane root = new BorderPane();
 		try {
@@ -32,6 +30,7 @@ public class Watch extends Application {
 			root.setCenter(vbox);
 			
 			new ControllerView();
+			new AnalogClock(time);
 				
 			Scene scene = new Scene(root, 500, 500);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());

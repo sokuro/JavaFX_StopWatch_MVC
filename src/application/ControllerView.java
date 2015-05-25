@@ -40,7 +40,7 @@ public class ControllerView extends Stage implements Observer {
 		b1.setFont(new Font ("Verdana", 14));
 		b1.setOnAction((event) -> {
 			Platform.runLater(() -> {
-				controller.start();				
+				this.controller.start();				
 			});
 		});
 		
@@ -48,7 +48,7 @@ public class ControllerView extends Stage implements Observer {
 		b2.setFont(new Font ("Verdana", 14));
 		b2.setOnAction((event) -> {
 			Platform.runLater(() -> {
-				controller.stop();
+				this.controller.stop();
 			});
 		});
 		
@@ -56,7 +56,7 @@ public class ControllerView extends Stage implements Observer {
 		b3.setFont(new Font ("Verdana", 14));
 		b3.setOnAction((event) -> {
 			Platform.runLater(() -> {
-				controller.reset();
+				this.controller.reset();
 			});
 		});
 		

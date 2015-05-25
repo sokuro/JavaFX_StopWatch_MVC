@@ -65,6 +65,8 @@ public class Timer extends Observable implements Runnable {
 			thread.setDaemon(true);
 			thread.setPriority(Thread.MAX_PRIORITY);
 			thread.start();
+			//empfohlen zu aktualisieren
+			this.updateObservers();
 		}
 	}
 
@@ -74,6 +76,7 @@ public class Timer extends Observable implements Runnable {
 	public final void stop() {
 		if (thread != null) {
 			thread = null;
+			this.updateObservers();
 		}
 	}
 

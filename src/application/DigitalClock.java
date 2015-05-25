@@ -7,6 +7,9 @@ import javafx.application.Platform;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
+/*
+ * muss Observer implementieren, um mit Time (Observable) zu kooperieren
+ */
 public class DigitalClock extends Stage implements Observer {
 
 	private Time time;
